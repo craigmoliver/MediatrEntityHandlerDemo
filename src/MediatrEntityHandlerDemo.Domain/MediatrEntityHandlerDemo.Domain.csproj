@@ -1,0 +1,56 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <Configurations>Debug;Release;dev;qa</Configurations>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <None Remove="Data\category.json" />
+      <None Remove="Data\customer.json" />
+      <None Remove="Data\customerdemographic.json" />
+      <None Remove="Data\demographic.json" />
+      <None Remove="Data\employee.json" />
+      <None Remove="Data\employeeterritory.json" />
+      <None Remove="Data\order.json" />
+      <None Remove="Data\orderdetail.json" />
+      <None Remove="Data\product.json" />
+      <None Remove="Data\region.json" />
+      <None Remove="Data\shipper.json" />
+      <None Remove="Data\supplier.json" />
+      <None Remove="Data\territory.json" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Include="Data\category.json" />
+      <EmbeddedResource Include="Data\customer.json" />
+      <EmbeddedResource Include="Data\customerdemographic.json" />
+      <EmbeddedResource Include="Data\demographic.json" />
+      <EmbeddedResource Include="Data\employee.json" />
+      <EmbeddedResource Include="Data\employeeterritory.json" />
+      <EmbeddedResource Include="Data\order.json" />
+      <EmbeddedResource Include="Data\orderdetail.json" />
+      <EmbeddedResource Include="Data\product.json" />
+      <EmbeddedResource Include="Data\region.json" />
+      <EmbeddedResource Include="Data\shipper.json" />
+      <EmbeddedResource Include="Data\supplier.json" />
+      <EmbeddedResource Include="Data\territory.json" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="AutoMapper" Version="12.0.1" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.7" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.7">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="6.0.7" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.7" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.7">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    </ItemGroup>
+
+</Project>
